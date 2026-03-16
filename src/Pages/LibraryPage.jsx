@@ -92,39 +92,39 @@ export default function LibraryPage() {
 
   return (
     <div className="min-h-full">
-      <header className="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-950/30">
+      <header className="border-b border-slate-200 bg-gradient-to-b from-white to-slate-50">
         <div className="mx-auto max-w-5xl px-4 py-10">
-          <p className="text-sm font-semibold text-sky-400">Staj Projesi</p>
-          <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl">
+          <p className="text-sm font-semibold text-emerald-600">Staj Projesi</p>
+          <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
             Kitaplık Yönetim Sistemi
           </h1>
-          <p className="mt-3 max-w-2xl text-slate-300">
+          <p className="mt-3 max-w-2xl text-slate-600">
             Kitap ekle, listele, güncelle ve sil. Veriler tarayıcıda{' '}
-            <span className="font-semibold text-slate-100">localStorage</span>{' '}
+            <span className="font-semibold text-slate-900">localStorage</span>{' '}
             ile saklanır.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <div className="rounded-2xl border border-slate-800 bg-slate-900/30 px-4 py-3">
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+            <div className="rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-md shadow-slate-200">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                 Toplam Kitap
               </p>
-              <p className="mt-1 text-2xl font-bold text-slate-50">
+              <p className="mt-1 text-2xl font-bold text-slate-900">
                 {stats.total}
               </p>
             </div>
-            <div className="rounded-2xl border border-slate-800 bg-slate-900/30 px-4 py-3">
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+            <div className="rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-md shadow-slate-200">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                 Benzersiz Yazar
               </p>
-              <p className="mt-1 text-2xl font-bold text-slate-50">
+              <p className="mt-1 text-2xl font-bold text-slate-900">
                 {stats.uniqueAuthors}
               </p>
             </div>
             <button
               type="button"
               onClick={handleClearAll}
-              className="ml-auto inline-flex items-center justify-center rounded-2xl border border-slate-800 bg-slate-900/30 px-4 py-3 text-sm font-semibold text-slate-100 transition hover:bg-slate-900"
+              className="ml-auto inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-100"
             >
               Tümünü Temizle
             </button>
@@ -133,12 +133,12 @@ export default function LibraryPage() {
       </header>
 
       <main className="mx-auto max-w-5xl px-4 py-10">
-        <div className="grid gap-6 lg:grid-cols-[1fr,1.2fr]">
-          <section className="rounded-2xl border border-slate-800 bg-slate-900/30 p-6">
-            <h2 className="text-lg font-semibold text-slate-50">
+        <div className="flex flex-col gap-6">
+          <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-lg shadow-slate-200">
+            <h2 className="text-lg font-extrabold tracking-tight text-slate-900">
               {mode === 'edit' ? 'Kitabı Güncelle' : 'Yeni Kitap Ekle'}
             </h2>
-            <p className="mt-1 text-sm text-slate-400">
+            <p className="mt-1 text-sm text-slate-600">
               {mode === 'edit'
                 ? 'Formu düzenleyip güncelle.'
                 : 'Kitap adı ve yazar bilgisini gir.'}
@@ -153,11 +153,13 @@ export default function LibraryPage() {
             </div>
           </section>
 
-          <section className="space-y-3">
+          <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-6 shadow-lg shadow-slate-200">
             <div className="flex items-end justify-between">
               <div>
-                <h2 className="text-lg font-semibold text-slate-50">Liste</h2>
-                <p className="mt-1 text-sm text-slate-400">
+                <h2 className="text-lg font-extrabold tracking-tight text-slate-900">
+                  Liste
+                </h2>
+                <p className="mt-1 text-sm text-slate-600">
                   Düzenlemek için “Düzenle”, silmek için “Sil”.
                 </p>
               </div>

@@ -43,7 +43,7 @@ export default function BookForm({ mode, initialValues, onSubmit, onCancel }) {
             autoFocus
           />
           {touched && errors.title ? (
-            <p className="mt-1 text-sm text-rose-300">{errors.title}</p>
+            <p className="mt-1 text-sm text-rose-500">{errors.title}</p>
           ) : null}
         </div>
 
@@ -56,7 +56,7 @@ export default function BookForm({ mode, initialValues, onSubmit, onCancel }) {
             placeholder="Örn: Paulo Coelho"
           />
           {touched && errors.author ? (
-            <p className="mt-1 text-sm text-rose-300">{errors.author}</p>
+            <p className="mt-1 text-sm text-rose-500">{errors.author}</p>
           ) : null}
         </div>
       </div>
@@ -70,7 +70,7 @@ export default function BookForm({ mode, initialValues, onSubmit, onCancel }) {
             Vazgeç
           </SecondaryButton>
         ) : null}
-        <p className="text-sm text-slate-400">
+        <p className="text-sm text-slate-500">
           {mode === 'edit'
             ? 'Seçili kaydı düzenliyorsun.'
             : 'Yeni kitap ekle.'}
