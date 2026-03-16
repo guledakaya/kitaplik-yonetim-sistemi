@@ -1,8 +1,30 @@
+![Uygulama Ekran Görüntüsü](./public/app-screenshot.png)
+
 ## Kitaplık Yönetim Sistemi
+
+- **Canlı Demo**: `https://kitaplik-yonetim-sistemi-guledakaya.netlify.app/`
+- **GitHub Repo**: `https://github.com/guledakaya/kitaplik-yonetim-sistemi`
 
 Software Persona Yazılım Stajı kapsamında **React** ve **Tailwind CSS** kullanılarak geliştirilmiş, modern arayüze sahip bir **Kitaplık Yönetim Sistemi (CRUD uygulaması)**.
 
 Uygulama ile kullanıcılar kitap ekleyebilir, mevcut kayıtları listeleyebilir, düzenleyebilir, silebilir ve tüm veriler **tarayıcı localStorage** alanında saklanır.
+
+---
+
+### Kurulum ve Çalıştırma
+
+Projeyi klonladıktan sonra kök dizinde aşağıdaki adımları uygulayın:
+
+```bash
+npm install
+npm run dev
+```
+
+Production build almak için:
+
+```bash
+npm run build
+```
 
 ---
 
