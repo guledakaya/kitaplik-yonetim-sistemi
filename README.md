@@ -2,7 +2,7 @@
 
 ## Kitaplık Yönetim Sistemi
 
-- **Canlı Demo**: `https://kitaplik-yonetim-sistemi-guledakaya.netlify.app/`
+- **Canlı Demo**: `https://kitaplik-yonetim-sistemi.vercel.app/`
 - **GitHub Repo**: `https://github.com/guledakaya/kitaplik-yonetim-sistemi`
 
 Software Persona Yazılım Stajı kapsamında **React** ve **Tailwind CSS** kullanılarak geliştirilmiş, modern arayüze sahip bir **Kitaplık Yönetim Sistemi (CRUD uygulaması)**.
